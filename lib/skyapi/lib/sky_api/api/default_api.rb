@@ -475,15 +475,15 @@ module SkyApi
 
     # coinSupplyHandler returns coin distribution supply stats
     # @param [Hash] opts the optional parameters
-    # @return [nil]
+    # @return [Object]
     def coin_supply(opts = {})
-      coin_supply_with_http_info(opts)
-      nil
+      data, _status_code, _headers = coin_supply_with_http_info(opts)
+      data
     end
 
     # coinSupplyHandler returns coin distribution supply stats
     # @param [Hash] opts the optional parameters
-    # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
+    # @return [Array<(Object, Fixnum, Hash)>] Object data, response status code and response headers
     def coin_supply_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: DefaultApi.coin_supply ...'
@@ -510,7 +510,8 @@ module SkyApi
         :query_params => query_params,
         :form_params => form_params,
         :body => post_body,
-        :auth_names => auth_names)
+        :auth_names => auth_names,
+        :return_type => 'Object')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: DefaultApi#coin_supply\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1244,7 +1245,7 @@ module SkyApi
       return data, status_code, headers
     end
 
-    # Returns a transaction identified by its txid hash with just id
+    # Returns a transaction identi`fied by its txid hash with just id
     # @param txid transaction hash
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :encoded return as a raw encoded transaction.
@@ -1254,7 +1255,7 @@ module SkyApi
       data
     end
 
-    # Returns a transaction identified by its txid hash with just id
+    # Returns a transaction identi&#x60;fied by its txid hash with just id
     # @param txid transaction hash
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :encoded return as a raw encoded transaction.
@@ -1648,15 +1649,15 @@ module SkyApi
 
     # versionHandler returns the application version info
     # @param [Hash] opts the optional parameters
-    # @return [nil]
+    # @return [Object]
     def version(opts = {})
-      version_with_http_info(opts)
-      nil
+      data, _status_code, _headers = version_with_http_info(opts)
+      data
     end
 
     # versionHandler returns the application version info
     # @param [Hash] opts the optional parameters
-    # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
+    # @return [Array<(Object, Fixnum, Hash)>] Object data, response status code and response headers
     def version_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: DefaultApi.version ...'
@@ -1683,7 +1684,8 @@ module SkyApi
         :query_params => query_params,
         :form_params => form_params,
         :body => post_body,
-        :auth_names => auth_names)
+        :auth_names => auth_names,
+        :return_type => 'Object')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: DefaultApi#version\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

@@ -138,7 +138,7 @@ describe 'DefaultApi' do
   # unit tests for coin_supply
   # coinSupplyHandler returns coin distribution supply stats
   # @param [Hash] opts the optional parameters
-  # @return [nil]
+  # @return [Object]
   describe 'coin_supply test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -308,7 +308,7 @@ describe 'DefaultApi' do
   end
 
   # unit tests for transaction
-  # Returns a transaction identified by its txid hash with just id
+  # Returns a transaction identi&#x60;fied by its txid hash with just id
   # @param txid transaction hash
   # @param [Hash] opts the optional parameters
   # @option opts [BOOLEAN] :encoded return as a raw encoded transaction.
@@ -400,7 +400,7 @@ describe 'DefaultApi' do
   # unit tests for version
   # versionHandler returns the application version info
   # @param [Hash] opts the optional parameters
-  # @return [nil]
+  # @return [Object]
   describe 'version test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

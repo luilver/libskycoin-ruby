@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 
 
 # **coin_supply**
-> coin_supply
+> Object coin_supply
 
 
 
@@ -483,7 +483,8 @@ require 'sky_api'
 api_instance = SkyApi::DefaultApi.new
 
 begin
-  api_instance.coin_supply
+  result = api_instance.coin_supply
+  p result
 rescue SkyApi::ApiError => e
   puts "Exception when calling DefaultApi->coin_supply: #{e}"
 end
@@ -494,7 +495,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-nil (empty response body)
+**Object**
 
 ### Authorization
 
@@ -1186,7 +1187,7 @@ No authorization required
 
 
 
-Returns a transaction identified by its txid hash with just id
+Returns a transaction identi`fied by its txid hash with just id
 
 ### Example
 ```ruby
@@ -1568,7 +1569,7 @@ Name | Type | Description  | Notes
 
 
 # **version**
-> version
+> Object version
 
 
 
@@ -1582,7 +1583,8 @@ require 'sky_api'
 api_instance = SkyApi::DefaultApi.new
 
 begin
-  api_instance.version
+  result = api_instance.version
+  p result
 rescue SkyApi::ApiError => e
   puts "Exception when calling DefaultApi->version: #{e}"
 end
@@ -1593,7 +1595,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-nil (empty response body)
+**Object**
 
 ### Authorization
 

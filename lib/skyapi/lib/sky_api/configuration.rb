@@ -14,7 +14,6 @@ require 'uri'
 
 module SkyApi
   class Configuration
-
     # Defines url scheme
     attr_accessor :scheme
 
@@ -148,7 +147,6 @@ module SkyApi
 
       yield(self) if block_given?
     end
-
 
     # The default Configuration object.
     def self.default
