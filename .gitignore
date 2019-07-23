@@ -162,3 +162,5 @@ seeds.csv
 histogram
 lib/skycoin/ext/libskycoin_ruby_wrap.c
 lib/skycoin/ext/libskycoin.h
+lib/skycoin/ext/Makefile 
+lib/skycoin/lib/libskycoin.h
