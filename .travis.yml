@@ -36,6 +36,7 @@ deploy:
 
   - provider: script
     script: bash .travis/deploy_rubygems.sh
+    skip_cleanup: true
     on:
       tags: true
 
