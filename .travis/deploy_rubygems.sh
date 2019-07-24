@@ -1,8 +1,9 @@
 #!/bin/sh
 
 # Add ~/.gem/credentials
-mkdir ~/.gem
-touch ~/.gem/credentials
+if [[ ! -e ~/.gem/credentials ]]; then
+	touch ~/.gem/credentials
+fi
 
 echo "---" >>  ~/.gem/credentials
 echo ":rubygems_api_key: " + "$RUBYGEMS_API_KEY" >> ~/.gem/credentials
